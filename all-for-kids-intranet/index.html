@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All For Kids Intranet</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation with Logo -->
+    <header>
+        <h1>All For Kids</h1>
+        <nav>
+            <a href="#news">News Feed</a>
+            <a href="#faq">FAQ</a>
+            <a href="#inquiry">Inquiry</a>
+        </nav>
+    </header>
+
+    <!-- News Feed Section -->
+    <section id="news">
+        <h2>News Feed</h2>
+        <div class="video-card">
+            <a href="https://youtu.be/MPc_PdmTgaU" target="_blank">A Day in the Life at All For Kids</a>
+            <p>Explore a typical day at All For Kids through this video.</p>
+        </div>
+        <div class="video-card">
+            <a href="https://youtu.be/hXEwJhn-ZdM" target="_blank">All For Kids Elevator Pitch</a>
+            <p>Learn more about our mission and values.</p>
+        </div>
+        <div class="video-card">
+            <a href="https://youtu.be/tYk8dCf0KA0" target="_blank">Cultural Heritage - Olvera Street</a>
+            <p>A tribute to the history and cultural significance of Olvera Street.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button onclick="toggleAnswer('answer1')">What is the process for requesting time off?</button>
+            <p id="answer1" class="answer">Submit through E3; refer to supervisor for specific expectations.</p>
+        </div>
+        <div class="faq-item">
+            <button onclick="toggleAnswer('answer2')">How does the organization handle sick leave?</button>
+            <p id="answer2" class="answer">AFK provides additional sick time; contact Clelia Ventura for details.</p>
+        </div>
+        <div class="faq-item">
+            <button onclick="toggleAnswer('answer3')">What benefits are available, and when can I enroll?</button>
+            <p id="answer3" class="answer">AFK offers various benefits; reach out to Cynthia Martinez-Tadle for info.</p>
+        </div>
+    </section>
+
+    <!-- Inquiry Submission Form -->
+    <section id="inquiry">
+        <h2>Submit an Inquiry</h2>
+        <form id="inquiryForm" onsubmit="sendInquiry(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
